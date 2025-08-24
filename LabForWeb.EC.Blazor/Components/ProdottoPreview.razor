@@ -2,6 +2,7 @@
 
     @if (prodotto != null)
     {
+    var url = "/prodotti/" + prodotto.Id;
     <!-- div@prodotto.Nome/div -->
     <div class="col">
         <div class="card">
@@ -9,6 +10,7 @@
             <div class="card-body">
                 <h5 class="card-title">@prodotto.Nome</h5>
                 <p class="card-text">@prodotto.DescrizioneBreve</p>
+                <NavLink href="@url" class="btn btn-primary">Vai al dettaglio</NavLink>
             </div>
         </div>
     </div>
